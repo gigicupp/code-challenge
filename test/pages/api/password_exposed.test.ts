@@ -11,7 +11,7 @@ describe('/api/password_exposed', () => {
     const { req, res } = mockRequest({
       method: 'POST',
       body: {
-        password: 'weakpass',
+        password: 'weakpassweakpass12345!',
       },
     });
 
@@ -27,7 +27,7 @@ describe('/api/password_exposed', () => {
     const { req, res } = mockRequest({
       method: 'POST',
       body: {
-        password: 'others',
+        password: 'otherspassword12345!',
       },
     });
 
